@@ -48,7 +48,7 @@ class Configuration(object):
         self.numSpatialX = [2, 4]
         self.numSpatialY = [2, 4]
         self.quantizer = 'vq'  # kdtree from the .m version not implemented
-        self.svm = SVMParameters(C=10, solver='pegasos', biasMultiplier=1)
+        self.svm = SVMParameters(C=10)
         self.phowOpts = PHOWOptions(Verbose=False, Sizes=[4, 6, 8, 10], Step=3)
         self.clobber = False
         self.tinyProblem = TINYPROBLEM
@@ -169,10 +169,8 @@ class Model(object):
 
 
 class SVMParameters(object):
-    def __init__(self, C, solver, biasMultiplier):
+    def __init__(self, C):
         self.C = C
-        self.solver = solver
-        self.biasMultiplier = biasMultiplier
 
 
 class PHOWOptions(object):
@@ -339,7 +337,7 @@ if __name__ == '__main__':
             verbose = True
         else:
             verbose = False
-        clf = svm.LinearSVC(C=10)
+        clf = svm.LinearSVC(C=conf.svm.C)
         if VERBOSE: print clf
         clf.fit(train_data, all_images_class_labels[selTrain])
         with open(conf.modelPath, 'wb') as fp:
