@@ -267,7 +267,7 @@ def computeHistograms(all_images, model, conf):
     hists = []
     for ii, imagefname in enumerate(all_images):
         print('Processing {0} ({1:.2f}%)'.format(imagefname, 100.0 * ii / len(all_images)))
-        im = imread(join(conf.calDir, imagefname))
+        im = imread(imagefname)
         hists_temp = getImageDescriptor(model, im)
         hists.append(hists_temp)
     hists = vstack(hists)
