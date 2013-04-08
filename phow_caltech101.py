@@ -83,7 +83,6 @@ class Configuration(object):
         self.numSpatialY = ensure_type_array(self.numSpatialY)
         if (self.numSpatialX != self.numSpatialY).any():
             messageformat = [str(self.numSpatialX), str(self.numSpatialY)]
-            import pdb; pdb.set_trace()
             message = "(self.numSpatialX != self.numSpatialY), because {0} != {1}".format(*messageformat)
             raise ValueError(message)
 
