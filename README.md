@@ -1,7 +1,9 @@
 phow_caltech101.py
 ==================
 
-This is a Python rewrite of [phow_caltech101.m][1], a 'one file' example script using the [VLFeat library][6] to train an test an image classifier on the [Caltech-101 data set][4]. 
+Simple example script for content based image classification using the bag of visual words approach. 
+
+The scritp is based on [phow_caltech101.m][1], a 'one file' example script using the [VLFeat library][6] to train an test an image classifier on the [Caltech-101 data set][4]. 
 
 This Python version archives the same average accuracy of around 65% using as the original file: 
 
@@ -10,6 +12,16 @@ This Python version archives the same average accuracy of around 65% using as th
 - Spatial histograms as image descriptors
 - A homogeneous kernel map to transform a Chi2 support vector machine (SVM) into a linear one
 - Liblinear SVM (instead of the Pegasos SVM of the Matlab script)
+
+The code also works with other datasets if the images are organized like in the Calltech data set, where all images belonging to one class are in the same folder:
+    
+    .
+    |-- path_to_folders_with_images
+    |    |-- class1
+    |    |-- class2
+    |    |-- class3
+    ...
+    |    └-- classN
 
 Requisite:
 
