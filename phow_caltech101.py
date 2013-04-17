@@ -215,7 +215,7 @@ def get_all_images(classes, conf):
         path = join(conf.calDir, imageclass)
         extensions = conf.extensions
         imgs = get_imgfiles(path, extensions)
-        if len(classes) == 0:
+        if len(imgs) == 0:
             raise ValueError('no images for class ' + str(imageclass))
         imgs = sample(imgs, conf.imagesperclass)
         all_images = all_images + imgs
