@@ -187,6 +187,8 @@ def get_classes(datasetpath, numClasses):
     classes = [basename(class_path) for class_path in classes_paths]
     if len(classes) == 0:
        raise ValueError('no classes found')
+    if len(classes) < numClasses:
+       raise ValueError('conf.numClasses is bigger than the number of folders')
     classes = classes[:numClasses]
     return classes
 
