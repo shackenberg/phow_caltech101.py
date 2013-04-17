@@ -18,10 +18,17 @@ The code also works with other datasets if the images are organized like in the 
     .
     |-- path_to_folders_with_images
     |    |-- class1
+    |    |    |-- some_image1.jpg
+    |    |    |-- some_image1.jpg
+    |    |    |-- some_image1.jpg
+    |    |    └ ...
     |    |-- class2
+    |    |    └ ...
     |    |-- class3
-    ...
+        ...
     |    └-- classN
+
+There are no constraints for the names of the files or folders. File extensions can be configures in [`conf.extensions`][7]
 
 Requisite:
 
@@ -35,3 +42,4 @@ Requisite:
 [3]: http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz
 [1]: http://www.vlfeat.org/applications/caltech-101-code.html
 [6]: http://www.vlfeat.org/index.html
+[7]: https://github.com/shackenberg/phow_caltech101.py/blob/master/phow_caltech101.py#L58
