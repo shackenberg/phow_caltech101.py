@@ -1,11 +1,11 @@
 phow_caltech101.py
 ==================
 
-Simple example script for content based image classification using the bag of visual words approach. 
+Script for content based image classification using the bag of visual words approach.
 
-The scritp is based on [phow_caltech101.m][1], a 'one file' example script using the [VLFeat library][6] to train an test an image classifier on the [Caltech-101 data set][4]. 
+The script is a Python version of [phow_caltech101.m][1], a 'one file' example script using the [VLFeat library][6] to train and evaluate a image classifier on the [Caltech-101 data set][4]. 
 
-This Python version archives the same average accuracy of around 65% using as the original file: 
+Like the original Matlab version this Python script achieves the same (State-of-the-Art in 2008) average accuracy of around 65% as the original file:
 
 - PHOW features (dense multi-scale SIFT descriptors)
 - Elkan k-means for fast visual word dictionary construction
