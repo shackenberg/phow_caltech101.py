@@ -38,7 +38,7 @@ Requisite:
 
 [5]: http://scikit-learn.org/stable/
 [4]: http://www.vision.caltech.edu/Image_Datasets/Caltech101/
-[2]: https://pypi.python.org/pypi/pyvlfeat/0.1.1a3
+[2]: https://pypi.python.org/pypi/pyvlfeat/
 [3]: http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz
 [1]: http://www.vlfeat.org/applications/caltech-101-code.html
 [6]: http://www.vlfeat.org/index.html
