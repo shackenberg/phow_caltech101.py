@@ -33,7 +33,7 @@ There are no constraints for the names of the files or folders. File extensions 
 Requisite:
 
 - [VLFeat with a Python wrapper][2]
-- [scikit-learn][5] for VLFeat functions that don't have a Python wrapper yet. 
+- [scikit-learn][5] to replace VLFeat ML functions that don't have a Python wrapper yet. 
 - [The Caltech101 dataset][3]
 
 [5]: http://scikit-learn.org/stable/
